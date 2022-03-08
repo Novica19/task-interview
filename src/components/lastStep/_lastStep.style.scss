@@ -1,0 +1,75 @@
+@import "../../style/abstract/variables";
+
+.last-step {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__line {
+        width: 100%;
+        margin-right: 10px;
+        height: 2.5px;
+        background-color: $default-secondary-dark-color;
+        left: 0;
+        top: 50%;
+        border-radius: 2px;
+
+        &-active {
+            background-color: $default-primary-dark-color;
+        }
+    }
+
+    &__line-right {
+        width: 100%;
+        margin-left: 10px;
+        height: 2.5px;
+        background-color: $default-secondary-dark-color;
+        left: 0;
+        top: 50%;
+        border-radius: 2px;
+
+        &-active {
+            background-color: $default-primary-dark-color;
+        }
+    }
+
+
+    &__content {
+        position: relative;
+        width: max-content;
+
+        &--number {
+            border-radius: 50%;
+            color: $default-secondary-light-color;
+            width: 3.5rem;
+            height: 3.5rem;
+            background-color: $default-secondary-dark-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            font-weight: 700;
+
+            &-active {
+                background-color: $default-primary-dark-color;
+                color: $default-secondary-light-color;
+            }
+        }
+
+        &--text {
+            position: absolute;
+            bottom: -2rem;
+            width: max-content;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $default-secondary-dark-color;
+
+            &-active {
+                color: $black;
+            }
+        }
+    }
+}
