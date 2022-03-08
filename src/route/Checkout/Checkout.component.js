@@ -5,11 +5,12 @@ import "./Checkout.extension.style.scss";
 
 class Checkout extends SourceCheckout{
 
+
     render() {
       
         return (
             <>
-            <ProgressBar/>
+            <ProgressBar stepMap={this.stepMap}/>
             <main block="Checkout">
                 <ContentWrapper
                   wrapperMix={ { block: 'Checkout', elem: 'Wrapper' } }
